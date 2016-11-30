@@ -6,3 +6,9 @@
 `pip install mapapi`
 
 `python baidumapdata.py`
+
+###mongoDB导出数据库文件为csv格式的用法
+
+在shell命令行执行
+
+`/usr/bin/mongoexport -u 用户名 -p 密码 -d 数据库名称 -c 表名称 --csv -f name,address,telephone,location,street_id,uid,_id -o csv名称.dat`
